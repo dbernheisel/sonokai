@@ -23,6 +23,7 @@ function! sonokai#get_configuration() "{{{
         \ 'diagnostic_line_highlight': get(g:, 'sonokai_diagnostic_line_highlight', 0),
         \ 'diagnostic_virtual_text': get(g:, 'sonokai_diagnostic_virtual_text', 'grey'),
         \ 'disable_terminal_colors': get(g:, 'sonokai_disable_terminal_colors', 0),
+        \ 'disable_transparent_terminal_background': get(g:, 'sonokai_transparent_terminal_background', 0),
         \ 'better_performance': get(g:, 'sonokai_better_performance', 0),
         \ }
 endfunction "}}}

@@ -30,7 +30,9 @@ endif
 " UI: {{{
 if s:configuration.transparent_background >= 1
   call sonokai#highlight('Normal', s:palette.fg, s:palette.none)
-  call sonokai#highlight('Terminal', s:palette.fg, s:palette.none)
+  if s:configuration.disable_transparent_terminal_background == 0
+    call sonokai#highlight('Terminal', s:palette.fg, s:palette.none)
+  endif
   if s:configuration.show_eob
     call sonokai#highlight('EndOfBuffer', s:palette.bg4, s:palette.none)
   else
